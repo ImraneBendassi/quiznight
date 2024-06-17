@@ -1,116 +1,134 @@
 /* styles.css */
+
+/* Style global pour le corps de la page */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif; /* Police de caractères */
+    margin: 0; /* Suppression des marges par défaut */
+    padding: 0; /* Suppression des paddings par défaut */
+    background-color: #f0f0f0; /* Couleur de fond de la page */
 }
 
+/* Style pour l'en-tête */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    background-color: #333; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte de l'en-tête */
+    padding: 10px; /* Espacement intérieur */
+    text-align: center; /* Alignement centré du texte */
 }
 
+/* Style pour le titre (H1) */
 h1 {
     color: red; /* Couleur du titre */
 }
 
+/* Style pour le contenu principal */
 main {
-    padding: 20px;
+    padding: 20px; /* Espacement intérieur */
 }
 
+/* Style pour le pied de page */
 .footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-align: center; /* Alignement centré du texte */
+    padding: 10px; /* Espacement intérieur */
+    background-color: #333; /* Couleur de fond du pied de page */
+    color: white; /* Couleur du texte du pied de page */
+    position: fixed; /* Positionnement fixe */
+    bottom: 0; /* Placement en bas de la page */
+    width: 100%; /* Largeur de 100% */
 }
 
+/* Style pour la section des boutons */
 .button-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: center; /* Alignement centré des éléments */
+    align-items: center; /* Alignement centré verticalement */
+    flex-direction: column; /* Alignement des éléments en colonne */
+    margin-top: 50px; /* Marge supérieure */
 }
 
+/* Style pour les boutons d'action */
 .action-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    transition: background-color 0.3s ease;
+    display: inline-block; /* Affichage en ligne */
+    padding: 10px 20px; /* Espacement intérieur (verticale et horizontale) */
+    margin: 10px; /* Marge extérieure */
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    text-decoration: none; /* Suppression de la décoration du texte */
+    border-radius: 5px; /* Arrondir les coins */
+    text-align: center; /* Alignement centré du texte */
+    transition: background-color 0.3s ease; /* Transition douce pour la couleur de fond */
 }
 
+/* Style pour le survol des boutons d'action */
 .action-button:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Couleur de fond au survol */
 }
 
 /* administration.css */
 
 /* Styles généraux */
 
+/* Style global pour le corps de la page */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif; /* Police de caractères */
+    margin: 0; /* Suppression des marges par défaut */
+    padding: 0; /* Suppression des paddings par défaut */
+    background-color: #f0f0f0; /* Couleur de fond de la page */
 }
 
+/* Style pour l'en-tête */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    background-color: #333; /* Couleur de fond de l'en-tête */
+    color: white; /* Couleur du texte de l'en-tête */
+    padding: 10px; /* Espacement intérieur */
+    text-align: center; /* Alignement centré du texte */
 }
 
+/* Style pour le titre (H1) */
 h1 {
-    margin: 20px 0;
-    text-transform: uppercase;
+    margin: 20px 0; /* Marge supérieure et inférieure */
+    text-transform: uppercase; /* Transformation du texte en majuscules */
 }
 
+/* Style pour la navigation */
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Suppression des puces */
+    padding: 0; /* Suppression des paddings par défaut */
 }
 
+/* Style pour les éléments de la liste de navigation */
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline; /* Affichage en ligne */
+    margin-right: 20px; /* Marge à droite des éléments */
 }
 
+/* Style pour les liens de navigation */
 nav ul li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    padding: 10px;
-    transition: color 0.3s ease;
+    color: #333; /* Couleur du texte des liens */
+    text-decoration: none; /* Suppression de la décoration du texte */
+    font-weight: bold; /* Gras */
+    font-size: 18px; /* Taille de police */
+    padding: 10px; /* Espacement intérieur */
+    transition: color 0.3s ease; /* Transition douce pour la couleur */
 }
 
+/* Style pour le survol des liens de navigation */
 nav ul li a:hover {
-    color: #007bff;
+    color: #007bff; /* Couleur du texte au survol */
 }
 
+/* Style pour le contenu principal */
 main {
-    padding: 20px;
+    padding: 20px; /* Espacement intérieur */
 }
 
+/* Style pour le pied de page */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-align: center; /* Alignement centré du texte */
+    padding: 10px; /* Espacement intérieur */
+    background-color: #333; /* Couleur de fond du pied de page */
+    color: white; /* Couleur du texte du pied de page */
+    position: fixed; /* Positionnement fixe */
+    bottom: 0; /* Placement en bas de la page */
+    width: 100%; /* Largeur de 100% */
 }
