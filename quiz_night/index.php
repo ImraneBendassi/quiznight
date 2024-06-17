@@ -1,36 +1,38 @@
 <?php
-// Autoload or include your class files
-include_once 'db.php'; // Adjusted path to match the directory structure
-include_once 'src/controllers/Quiz.php';
-include_once 'src/controllers/Question.php';
-include_once 'src/controllers/Answer.php';
+// Inclure db.php pour établir la connexion PDO
+require_once 'db.php';
 
-// Create a database connection
+// Autres inclusions de vos classes
+require_once 'src/controllers/Quiz.php';
+require_once 'src/controllers/Question.php';
+require_once 'src/controllers/Answer.php';
+
+// Créer une instance de la classe Database et obtenir la connexion PDO
 $database = new Database();
 $db = $database->getConnection();
 
-// Example usage of the classes
+// Exemple d'utilisation des classes Quiz, Question, Answer
 $quiz = new Quiz($db);
 $question = new Question($db);
 $answer = new Answer($db);
 
-// Your logic here
-// For example, creating a new quiz
-$quiz->title = "Sample Quiz";
-$quiz->description = "This is a sample quiz description.";
+// Votre logique ici
+// Par exemple, créer un nouveau quiz
+$quiz->title = "Quiz exemple";
+$quiz->description = "Ceci est une description de quiz exemple.";
 if ($quiz->create()) {
-    echo "Quiz was created.";
+    echo "Le quiz a été créé avec succès.";
 } else {
-    echo "Unable to create quiz.";
+    echo "Impossible de créer le quiz.";
 }
 
-// Fetching quizzes
+// Récupérer les quizzes
 $stmt = $quiz->read();
 $num = $stmt->rowCount();
 if ($num > 0) {
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         extract($row);
-        echo "Quiz ID: $id, Title: $title, Description: $description, Created At: $created_at\n";
+        echo "ID du quiz : $id, Titre : $title, Description : $description, Créé le : $created_at\n";
     }
 }
 ?>
